@@ -6,7 +6,7 @@ def sms(bot, update):
     bot.message.reply_text('Здраствуйте, я бот! \nЯ пока не умею разговаривать, но я быстро учусь!')
 
 def main():
-    my_bot = Updater("5252643142:AAHDdbzArzBqVCejtAYjL2nHAk3zPImAvJQ", "https://telegg.ru/orig/bot", use_context=True)
+    my_bot = Updater("5252643142:AAHDdbzArzBqVCejtAYjL2nHAk3zPImAvJQ", use_context=True)
 
     my_bot.dispatcher.add_handler(CommandHandler('start', sms))
 
